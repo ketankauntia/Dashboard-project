@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- importing fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <!-- importing apex charts  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <!-- importing css stylesheet  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Css Grid Admin Dashboard</title>
+  </head>
+  <body>
+    <!-- to apply grid as 1/4 1/4 1/4 , putting all the code within one container tag to target it easily -->
+    <div class="container">
+      <!-- navbar  -->
+      <nav class="navbar">
+        <div class="navbar-left-options">
+          <a href="#" class="navbar-links">Subscribers</a>
+          <a href="#" class="navbar-links">Video Mannagement</a>
+          <a href="#" class="navbar-links navbar--active">Admin</a>
+        </div>
+        <div class="navbar-right-options">
+          <a href="#" class="navbar-links">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="navbar-links">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="navbar-links">
+            <img src="./img/avatar.svg" alt="Profile pic" />
+          </a>
+        </div>
+      </nav>
+      <!-- end of navbar  -->
+
+      <!-- main body  -->
+      <main>
+        <div class="main-body">
+          <div class="main-body-contents">
+            <!-- 1 - hello text  -->
+            <div class="welcome-container">
+              <img src="./img/hello.svg" alt="" />
+              <div class="welcome-text">
+                <h2>hey Ketan</h2>
+                <p>Welcome to you admin dashboard !!</p>
+              </div>
+            </div>
+
+            <!-- 2 - Cards (display grid)  -->
+            <div class="cards">
+              <div class="cards-container">
+                <!-- card 1  -->
+                <div class="cards-single card1">
+                  <i
+                    class="fa fa-user-o fa-2x text-lightblue"
+                    aria-hidden="true"
+                  ></i>
+                  <div class="cards-single-text">
+                    <p>no of Subscribers</p>
+                    <span>5999</span>
+                  </div>
+                </div>
+                <!-- card 2  -->
+                <div class="cards-single card2">
+                  <i
+                    class="fa fa-calendar fa-2x text-red"
+                    aria-hidden="true"
+                  ></i>
+                  <div class="cards-single-text">
+                    <p>no of Subscribers</p>
+                    <span>5999</span>
+                  </div>
+                </div>
+                <!-- card 3  -->
+                <div class="cards-single card3">
+                  <i
+                    class="fa fa-video-camera fa-2x text-yellow"
+                    aria-hidden="true"
+                  ></i>
+                  <div class="cards-single-text">
+                    <p>no of Subscribers</p>
+                    <span>5999</span>
+                  </div>
+                </div>
+                <!-- card 4  -->
+                <div class="cards-single card4">
+                  <i
+                    class="fa fa-thumbs-up fa-2x text-green"
+                    aria-hidden="true"
+                  ></i>
+                  <div class="cards-single-text">
+                    <p>no of Subscribers</p>
+                    <span>5999</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 - daily reports and stats reports  -->
+            <div class="reports-and-stats">
+              <div class="reports-stats-container">
+                <!-- Daily reports container  -->
+                <div class="daily-reports">
+                  <div class="daily-reports-text-logo">
+                    <div class="daily-reports-text">
+                      <h2>Daily Reports</h2>
+                      <p>Chandini Chowk, New Delhi, India</p>
+                    </div>
+                    <i class="fa fa-usd" aria-hidden="true"></i>
+                  </div>
+                  <div class="daily-reports-chart">
+                    <h1>Chart Here</h1>
+                  </div>
+                </div>
+
+                <!-- Sales reports container  -->
+                <div class="sales-reports">
+                  <div class="sales-reports-text-logo">
+                    <div class="sales-reports-text">
+                      <h2>Sales Reports</h2>
+                      <p>Chandini Chowk, New Delhi, India</p>
+                    </div>
+                    <i class="fa fa-usd" aria-hidden="true"></i>
+                  </div>
+                  <div class="sales-reports-cards">
+                    <div class="salescards sales-card1">
+                      <h3>Income</h3>
+                      <span>$42,000</span>
+                    </div>
+                    <div class="salescards sales-card2">
+                      <h3>Sales</h3>
+                      <span>$124,100</span>
+                    </div>
+                    <div class="salescards sales-card3">
+                      <h3>Users</h3>
+                      <span>2,417</span>
+                    </div>
+                    <div class="salescards sales-card4">
+                      <h3>Orders</h3>
+                      <span>6,734</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Sidebar container  -->
+      <div id="sidebar">
+        <div class="sidebar-container">
+          <!-- sidebar title block  -->
+          <div class="sidebar-title">
+            <div class="sidebar-img">
+              <img src="./img/avatar.svg" alt="User" />
+            </div>
+            <h3>Ketan Kauntia</h3>
+          </div>
+
+          <div class="sidebar-heading">
+            <i class="fa fa-home"></i>
+            <a href="#">Dashboard</a>
+          </div>
+
+          <!-- sidebar containers  -->
+          <div class="sidebar-container">
+            <h2>MNG</h2>
+            <div class="sidebar-links">
+              <i class="fa fa-user-secret" aria-hidden="true"></i>
+              <a href="#">Admin Mannagement</a>
+            </div>
+            <div class="sidebar-links">
+              <i class="fa fa-building-o"></i>
+              <a href="#">Company Mannagement</a>
+            </div>
+            <div class="sidebar-links">
+              <i class="fa fa-wrench"></i>
+              <a href="#">Employee Mannagement</a>
+            </div>
+            <div class="sidebar-links">
+              <i class="fa fa-archive"></i>
+              <a href="#">Warehouse</a>
+            </div>
+            <div class="sidebar-links">
+              <i class="fa fa-handshake-o"></i>
+              <a href="#">Contracts</a>
+            </div>
+
+            <h2>LEAVE</h2>
+
+            <div class="sidebar-links">
+              <i class="fa fa-question"></i>
+              <a href="#">Requests</a>
+            </div>
+            <div class="sidebar-links">
+              <i class="fa fa-sign-out"></i>
+              <a href="#">Leave Policy</a>
+            </div>
+            <div class="sidebar-links">
+              <i class="fa fa-calendar-check-o"></i>
+              <a href="#">Special Days</a>
+            </div>
+            <div class="sidebar-links">
+              <i class="fa fa-files-o"></i>
+              <a href="#">Apply for leave</a>
+            </div>
+
+            <h2>PAYROLL</h2>
+
+            <div class="sidebar-links">
+              <i class="fa fa-money"></i>
+              <a href="#">Payroll</a>
+            </div>
+            <div class="sidebar-links">
+              <i class="fa fa-briefcase"></i>
+              <a href="#">Paygrad</a>
+            </div>
+
+            <div class="sidebar-logout">
+              <i class="fa fa-power-off"></i>
+              <a href="#">LOG OUT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
